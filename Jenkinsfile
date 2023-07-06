@@ -1,6 +1,6 @@
 #!groovy
 pipeline {
-    agent { node { label 'android' } }
+    agent any
 
     parameters {
         choice(name: "ENVIRONMENT", choices: "NINGUNO\nDEV\nPRO", description: "The environment to be compiled")
