@@ -2,14 +2,6 @@
 pipeline {
     agent any
 
-   /* parameters {
-        choice(name: "ENVIRONMENT", choices: "NINGUNO\nDEV\nPRO", description: "The environment to be compiled")
-        string(name: "EMAILS", defaultValue: "", description: "e-mails to send the builds")
-        booleanParam(name: "UI_TESTS", defaultValue: false, description: "Do you want to want to run UI tests")
-        string(name: "TAG_NAME", defaultValue: "", description: "The tag name of your code")
-        string(name: "TAG_MESSAGE", defaultValue: "", description: "The message of your tag")
-    } */
-
     stages {
         stage('Build') {
             steps {
